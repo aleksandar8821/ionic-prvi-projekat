@@ -37,11 +37,11 @@ export class MyApp {
       this.splashScreen.hide();
 
       
-        this.alertController.create({
-          title: 'No Network',
-          subTitle: 'Network type ' + this.network.type
-        })
-        .present();
+        // this.alertController.create({
+        //   title: 'No Network',
+        //   subTitle: 'Network type ' + this.network.type
+        // })
+        // .present();
       
     });
   }
