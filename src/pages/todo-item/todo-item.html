@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Add todo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      Title: {{todo.title}}
+    </ion-item>
+    <ion-item>
+      Date: {{todo.date}} : {{todo.time}}
+    </ion-item>
+    <ion-item>
+      Status: {{todo.done ? 'Done' : 'Not done'}}
+    </ion-item>
+    <button ion-button (click)="close()">Close</button>
+  </ion-list>
+</ion-content>
